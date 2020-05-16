@@ -2,15 +2,13 @@
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next pisces" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
+<meta name="theme-color" content="">
 
 
 
@@ -40,7 +38,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -48,27 +46,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/function%20small()%20%7B%20%5Bnative%20code%5D%20%7D?v=0.5.0">
 
 
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+
+  <meta name="keywords" content="jumpingfrog0, Swift, iOS" />
 
 
 
@@ -98,12 +90,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    scheme: 'Pisces',
+    version: '0.5.0',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    tabs: ,
+    motion: "",
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -112,15 +104,13 @@
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
 
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
 
 
 
@@ -183,9 +173,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Home
           </a>
@@ -193,19 +183,69 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Archives
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '_hsnBCSxyAH__Kvfd1uL','2.0.0');
+</script>
+
+
+
+    </div>
   
 </nav>
 
@@ -239,7 +279,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="liuyonghai">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/minion.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -259,16 +299,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-16T21:50:32+08:00">
-                2020-05-16
-              </time>
-            
 
             
 
@@ -278,6 +308,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/05/16/Hugo%E9%83%A8%E7%BD%B2%E5%88%B0Github/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2020/05/16/Hugo部署到Github/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -305,45 +345,16 @@
       
         
           
-            <h1 id="部署Hugo"><a href="#部署Hugo" class="headerlink" title="部署Hugo"></a>部署Hugo</h1><p>Github Pages又分为两种方式，一种是通过<code>User/Organization Pages</code>，另一种是<code>Project Pages</code>，两者的区别可以看这里<a href="https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages" target="_blank" rel="noopener">User, Organization, and Project Pages</a>，使用个人页面 <code>User Pages</code>相对简单一些</p>
-<h2 id="部署到Github个人页面"><a href="#部署到Github个人页面" class="headerlink" title="部署到Github个人页面"></a>部署到Github个人页面</h2><ol>
-<li><p>在Github创建一个仓库，例如名字叫<code>blog</code>，可以是私有的，这个仓库用来存放网站内容和源文件</p>
-</li>
-<li><p>再创建一个名称为<code>.github.io</code>的仓库，username为GitHub用户名，这个仓库用于存放最终发布的网站内容</p>
-</li>
-<li><p>进入本地网站目录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;YOUR PROJECT&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>关联远程blog仓库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:jeshs/blog.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将本地网站全部内容推送到远程blog仓库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>确保本地网站正常，<code>hugo server</code>运行后在本地打开<code>localhost:1313</code>检查网站效果和内容，注意<code>hugo server</code>这个命令不会构建草稿，所以如果有草稿需要发布，将文章中的<code>draft</code>设置为<code>false</code></p>
-</li>
-<li><p>关闭本地Hugo服务器<code>Ctrl+C</code>，然后删除本地网站目录下的<code>public</code>文件夹</p>
-</li>
-<li><p>创建<code>public</code>子模块，注意下面是一行命令，不是两行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>然后就可以执行<code>hugo</code>命令，此命令会自动将网站静态内容生成到<code>public</code>文件夹，然后提交到远程blog仓库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hugo</span><br><span class="line">cd public</span><br><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git commit -m "first commit"</span><br><span class="line">git push -u orgin master</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>过一会就可以打开<code>.github.io</code>查看网站了</p>
-<p><strong>注意</strong>：本地网站是关联的<code>blog</code>仓库，本地网站下的<code>public</code>文件夹是以子模块的形式关联的<code>github.io</code>仓库，他们是相对独立的</p>
-<h2 id="自动部署脚本"><a href="#自动部署脚本" class="headerlink" title="自动部署脚本"></a>自动部署脚本</h2><p>将以上步骤添加到自动执行脚本中<code>deploy.sh</code>，脚本<code>commit</code>提交信息会使用执行时的时间，将脚本放到网站项目路径下，写完博客后，双击运行即可自动部署发布</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Build the project.</span></span><br><span class="line">hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Go To Public folder</span></span><br><span class="line">cd public</span><br><span class="line"><span class="meta">#</span><span class="bash"> Add changes to git.</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Commit changes.</span></span><br><span class="line">msg="rebuilding site `date`"</span><br><span class="line">if [ $# -eq 1 ]</span><br><span class="line">  then msg="$1"</span><br><span class="line">fi</span><br><span class="line">git commit -m "$msg"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Push <span class="built_in">source</span> and build repos.</span></span><br><span class="line">git push origin master</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Come Back up to the Project Root</span></span><br><span class="line">cd ..</span><br></pre></td></tr></table></figure>
-
-<h1 id="给网站添加评论"><a href="#给网站添加评论" class="headerlink" title="给网站添加评论"></a>给网站添加评论</h1><p>Hugo支持Disqus评论，只需要在配置文件<code>config.toml</code>中设置<code>disqusShortname = &quot;disqusShortname&quot;</code>，如果没有<code>disqusShortname</code>，需要到<a href="https://disqus.com/" target="_blank" rel="noopener">Disqus官网</a>注册一个账号，注册后添加一个网站，添加时会让填一个<code>shortname</code>，Disqus会生成一个shortname.disqus.com的网址，另外还需要把<code>config.toml</code>中的<code>baseURL</code>地址，也就是公网访问地址添加到Diqus的信任网址中，类似于互相添加信任</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><blockquote>
-<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener">hosting-on-github</a></p>
-<p><a href="https://zh4ui.net/post/2017-04-20-hugo-with-disqus/" target="_blank" rel="noopener">给Hugo添加disqus评论服务</a></p>
-</blockquote>
-
-          
+          部署HugoGithub Pages又分为两种方式，一种是通过User/Organization Pages，另一种是Project Pages，两者的区别可以看这里User, Organization, and Project Pages，使用个人页面 User Pages相对简单一些
+部署到Gi
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/16/Hugo%E9%83%A8%E7%BD%B2%E5%88%B0Github/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -395,7 +406,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="liuyonghai">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/minion.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -415,16 +426,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-16T16:27:48+08:00">
-                2020-05-16
-              </time>
-            
 
             
 
@@ -434,6 +435,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/05/16/%E6%97%85%E8%A1%8C%E5%B0%8F%E7%AC%BA/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2020/05/16/旅行小笺/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -461,13 +472,20 @@
       
         
           
-            <h3 id="天池风光"><a href="#天池风光" class="headerlink" title="天池风光"></a>天池风光</h3><p><img src="/images/641589563715_.pic_hd.jpg" alt="长白山天池"></p>
-<p><img src="/images/751589564382_.pic_hd.jpg" alt="长白山瀑布"></p>
-<p><img src="/images/861589564863_.pic_hd.jpg" alt="延边大学门口"></p>
-<p><img src="/images/911589565078_.pic_hd.jpg" alt="延边大学大门"></p>
-<p><a href="https://www.youtube.com/" target="_blank" rel="noopener">油管视频</a></p>
+          天池风光
+
+
+
+油管视频
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/16/%E6%97%85%E8%A1%8C%E5%B0%8F%E7%AC%BA/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -536,6 +554,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/minion.jpeg"
+                alt="liuyonghai" />
+            
               <p class="site-author-name" itemprop="name">liuyonghai</p>
               <p class="site-description motion-element" itemprop="description">无聊的程序员</p>
           </div>
@@ -545,7 +567,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives">
               
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
@@ -562,11 +584,51 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/jumpingfrog0" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/3290250165/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-globe"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/huang-dong-hong" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
 
           
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://bing.com" title="Bing" target="_blank">Bing</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://objccn.io/" title="Objccn.io" target="_blank">Objccn.io</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -590,7 +652,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">liuyonghai</span>
 
@@ -598,15 +660,9 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
@@ -665,77 +721,94 @@
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="//jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="//velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="//velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
+    <script type="text/javascript" src="//fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
 
-
-	
-
-
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
 
 
 
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"jumpingfrog0"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="//ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
-  
+
 
 
 
